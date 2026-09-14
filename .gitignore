@@ -1,0 +1,6 @@
+dist/
+NOTES.md
+.DS_Store
+__pycache__/
+.claude/
+.idea/
