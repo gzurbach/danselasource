@@ -327,3 +327,41 @@ sup { font-size: .62em; }
 .credits li { font-size: .82rem; color: var(--ink-soft); line-height: 1.5; }
 .credits a { color: var(--ink-soft); }
 .credits a:hover { color: var(--green-dark); }
+
+/* ---------- 404 ---------- */
+
+.notfound {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: min(68svh, 32rem);
+  padding-block: 3.5rem;
+}
+.notfound-code {
+  font-family: var(--serif);
+  font-size: clamp(4.5rem, 16vw, 9rem);
+  font-weight: 600;
+  line-height: .9;
+  letter-spacing: -.04em;
+  color: var(--line);
+  margin: 0 0 1rem;
+}
+.notfound h1 { margin-bottom: .25rem; }
+.notfound-sub {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  color: var(--ink-soft);
+  margin: 0 0 1.4rem;
+}
+.notfound-text {
+  color: var(--ink-soft);
+  margin: 0 auto;
+  max-width: 42ch;
+}
+.notfound-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  justify-content: center;
+  margin-top: 2.2rem;
+}

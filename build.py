@@ -435,18 +435,24 @@ def page_attractions(lang):
 
 
 def page_404():
-    return head("fr", "/404", "Page introuvable",
-                "Cette page n'existe pas.") + header("fr", "/") + """
+    """Bilingual, since a stale link could arrive from either language."""
+    doc = head("fr", "/404", "Page introuvable", "Cette page n'existe pas.")
+    doc = doc.replace("</head>", '<meta name="robots" content="noindex">\n</head>')
+    # "/404" matches no nav item, so nothing is marked as the current page.
+    return doc + header("fr", "/404") + """
 <main id="main">
-<section class="wrap page-head" style="min-height:48svh">
-<p class="eyebrow">Erreur 404</p>
+<section class="notfound">
+<div class="wrap">
+<p class="notfound-code" aria-hidden="true">404</p>
 <h1>Page introuvable</h1>
-<p class="lede">Cette page n'existe pas ou a déménagé.<br>
-<span lang="en">This page does not exist or has moved.</span></p>
-<p style="margin-top:1.5rem">
-<a class="btn btn-primary" href="/">Retour à l'accueil</a>
-<a class="btn btn-ghost" href="/en/" style="margin-left:.5rem">English</a>
-</p>
+<p class="notfound-sub" lang="en">Page not found</p>
+<p class="notfound-text">Cette page n'existe pas ou a déménagé.<br>
+<span lang="en">This page doesn't exist or has moved.</span></p>
+<div class="notfound-actions">
+<a class="btn btn-primary" href="/">Accueil en français</a>
+<a class="btn btn-ghost" href="/en/" hreflang="en" lang="en">English home</a>
+</div>
+</div>
 </section>
 </main>
 """ + footer("fr")
