@@ -25,6 +25,10 @@ Photos live in `assets/img/`: `full/` is shown in the lightbox, `thumb/` in the
 grid. To add one, put both sizes in with the same filename and add an entry to
 the relevant gallery list in `content.py`.
 
+Filenames say what they are — `gite-cuisine`, `studio-lit`, or the place name
+for the attractions. `archive/` holds older photos no page uses; it stays in the
+repo but is never published.
+
 ## Pages
 
 Each language lives in its own folder, French at the root.

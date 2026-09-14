@@ -22,40 +22,40 @@ SITE = {
 BOOKING_FR = "https://www.gites-de-france-allier.com/location-vacances-Gite-Trezelles-03G4901.html"
 BOOKING_EN = "https://www.gites-de-france.com/en/auvergne-rhone-alpes/allier/danse-la-source-03g4901"
 
-HERO = "home-rotated-2"
+HERO = "gite-facade"
 
 # (file, caption fr, caption en)
 GALLERY_HOUSE = [
-    ("img-0200", "Entrée du gîte depuis la cour", "The cottage entrance from the courtyard"),
-    ("b.gite-c-t-jardin-1600x1200-", "La maison vue du pré", "The house seen from the meadow"),
-    ("jouanaud-trezelle-gdf-2024-14-", "La grande table", "The long dining table"),
-    ("jouanaud-trezelle-gdf-2024-10-", "Salle à manger", "Dining room"),
-    ("jouanaud-trezelle-gdf-2024-17-", "La cuisine", "The kitchen"),
-    ("jouanaud-trezelle-gdf-2024-4-", "Le salon et sa cheminée", "The living room and its fireplace"),
-    ("jouanaud-trezelle-gdf-2024-2-", "Le mini-cinéma", "The mini-cinema"),
-    ("jouanaud-trezelle-gdf-2024-6-", "La bibliothèque", "The library"),
-    ("b.salon-acidul-1-1600x1200-", "Petit salon", "Small sitting room"),
-    ("jouanaud-trezelle-gdf-2024-28-", "Chambre aux ciels de lit", "Bedroom with canopied beds"),
-    ("jouanaud-trezelle-gdf-2024-33-", "Chambre et sa maison de poupée", "Bedroom with its doll's house"),
-    ("g4901-15-", "Les Coquelicots", "Les Coquelicots"),
-    ("g4901-28-", "Le Wagon-lit", "Le Wagon-lit"),
-    ("g4901-6-", "Le village Vry", "Le village Vry"),
-    ("g4901-8-", "Le village Vry", "Le village Vry"),
-    ("g4901-9-", "Chez Tante Simone", "Chez Tante Simone"),
-    ("g4901-17-", "La nurserie", "The nursery"),
-    ("jouanaud-trezelle-gdf-2024-22-", "Salle d'eau", "Shower room"),
-    ("g4901-19-", "Salle d'eau", "Shower room"),
-    ("g4901-2-", "Salle d'eau", "Shower room"),
-    ("g4901-11-", "Vue de la coursive", "View from the walkway"),
-    ("b.terrasse-c-t-jardin-1600x1200-", "La terrasse sous la glycine", "The terrace under the wisteria"),
-    ("b.jardin-2-1600x1200-", "Au jardin", "In the garden"),
-    ("b.terrain-de-boules-1600x1200-", "Le terrain de boules", "The pétanque court"),
+    ("gite-entree-cour", "Entrée du gîte depuis la cour", "The cottage entrance from the courtyard"),
+    ("gite-maison-vue-du-pre", "La maison vue du pré", "The house seen from the meadow"),
+    ("gite-grande-table", "La grande table", "The long dining table"),
+    ("gite-salle-a-manger", "Salle à manger", "Dining room"),
+    ("gite-cuisine", "La cuisine", "The kitchen"),
+    ("gite-salon-cheminee", "Le salon et sa cheminée", "The living room and its fireplace"),
+    ("gite-mini-cinema", "Le mini-cinéma", "The mini-cinema"),
+    ("gite-bibliotheque", "La bibliothèque", "The library"),
+    ("gite-petit-salon", "Petit salon", "Small sitting room"),
+    ("gite-chambre-ciels-de-lit", "Chambre aux ciels de lit", "Bedroom with canopied beds"),
+    ("gite-chambre-maison-de-poupee", "Chambre et sa maison de poupée", "Bedroom with its doll's house"),
+    ("gite-chambre-coquelicots", "Les Coquelicots", "Les Coquelicots"),
+    ("gite-chambre-wagon-lit", "Le Wagon-lit", "Le Wagon-lit"),
+    ("gite-chambre-village-vry-1", "Le village Vry", "Le village Vry"),
+    ("gite-chambre-village-vry-2", "Le village Vry", "Le village Vry"),
+    ("gite-chambre-tante-simone", "Chez Tante Simone", "Chez Tante Simone"),
+    ("gite-nurserie", "La nurserie", "The nursery"),
+    ("gite-salle-d-eau-1", "Salle d'eau", "Shower room"),
+    ("gite-salle-d-eau-2", "Salle d'eau", "Shower room"),
+    ("gite-salle-d-eau-3", "Salle d'eau", "Shower room"),
+    ("gite-coursive", "Vue de la coursive", "View from the walkway"),
+    ("gite-terrasse-glycine", "La terrasse sous la glycine", "The terrace under the wisteria"),
+    ("gite-jardin", "Au jardin", "In the garden"),
+    ("gite-terrain-de-boules", "Le terrain de boules", "The pétanque court"),
 ]
 
 GALLERY_STUDIO = [
-    ("jouanaud-trezelle-gdf-2024-48-", "Le lit du Studio", "The Studio's bed"),
-    ("jouanaud-trezelle-gdf-2024-43-", "Le Studio", "The Studio"),
-    ("jouanaud-trezelle-gdf-2024-49-", "La salle d'eau du Studio", "The Studio's shower room"),
+    ("studio-lit", "Le lit du Studio", "The Studio's bed"),
+    ("studio-chambre", "Le Studio", "The Studio"),
+    ("studio-salle-d-eau", "La salle d'eau du Studio", "The Studio's shower room"),
 ]
 
 # --- Home / welcome -------------------------------------------------------
@@ -332,7 +332,7 @@ ATTRACTIONS = [
       "jets, slides and a \"sprinkler fish\" for little ones, heated open-air pools accessible to "
       "people with reduced mobility, a bar, a volleyball court, a shaded lawn and a rest area.")),
 
-    ("vulcania-2", "1 h 30",
+    ("vulcania", "1 h 30",
      ("Vulcania", "https://www.vulcania.com/",
       "Découvrez l'histoire, la beauté et la force des volcans d'Auvergne grâce au musée et au "
       "parc d'attraction Vulcania, situé à 950 m d'altitude sur 57 hectares, avec plus de 30 "
@@ -355,7 +355,7 @@ ATTRACTIONS = [
       "is a place formed by the accumulation of many plant species over several millennia. A "
       "discovery trail and a wooden boardwalk let you cross it.")),
 
-    ("pisserote", "35 min",
+    ("cascade-pisserotte", "35 min",
      ("Cascade de la Pisserotte à Arfeuilles",
       "https://www.allier-auvergne-tourisme.com/equipement/arfeuilles/autour-de-la-cascade-de-la-pisserotte/4889168",
       "« La Pisserotte » est un opéra sauvage d'éléments naturels : eaux vives, blocs rocheux, "

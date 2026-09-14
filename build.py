@@ -92,7 +92,7 @@ def head(lang, path, title, meta):
 <meta property="og:title" content="%(title)s">
 <meta property="og:description" content="%(meta)s">
 <meta property="og:url" content="%(domain)s%(path)s">
-<meta property="og:image" content="%(domain)s/assets/img/full/%(hero)s.webp">
+<meta property="og:image" content="%(domain)s%(hero)s">
 <meta property="og:locale" content="%(locale)s">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
@@ -106,7 +106,8 @@ def head(lang, path, title, meta):
 <a class="skip" href="#main">%(skip)s</a>
 """ % {
         "lang": lang, "title": esc(full_title), "meta": esc(meta), "domain": SITE["domain"],
-        "path": path, "links": links, "hero": C.HERO, "skip": esc(ui["skip"]),
+        "path": path, "links": links, "hero": img_file(C.HERO, "full"),
+        "skip": esc(ui["skip"]),
         "locale": "fr_FR" if lang == "fr" else "en_GB",
     }
 
@@ -469,7 +470,7 @@ def jsonld():
 "url":"%(domain)s/",
 "telephone":"%(tel)s",
 "email":"%(email)s",
-"image":"%(domain)s/assets/img/full/%(hero)s.webp",
+"image":"%(domain)s%(hero)s",
 "address":{"@type":"PostalAddress","streetAddress":"230 Rte de Floret","addressLocality":"Trézelles",
 "postalCode":"03220","addressCountry":"FR"},
 "geo":{"@type":"GeoCoordinates","latitude":%(lat)s,"longitude":%(lng)s},
@@ -477,7 +478,7 @@ def jsonld():
 "numberOfRooms":6}
 </script>"""  % {
         "name": SITE["name"], "desc": C.HOME["fr"]["meta"], "domain": SITE["domain"],
-        "tel": SITE["phone_tel"], "email": SITE["email"], "hero": C.HERO,
+        "tel": SITE["phone_tel"], "email": SITE["email"], "hero": img_file(C.HERO, "full"),
         "lat": SITE["lat"], "lng": SITE["lng"],
     }
 
@@ -532,7 +533,10 @@ def main():
     with open(os.path.join(OUT, "CNAME"), "w", encoding="utf-8") as fh:
         fh.write(SITE["domain"].split("://")[1] + "\n")
 
-    shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"))
+    # assets/img/archive holds photos no page uses; it is kept in the repo but
+    # never published.
+    shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"),
+                    ignore=shutil.ignore_patterns("archive"))
 
     total = sum(
         os.path.getsize(os.path.join(dp, f))
