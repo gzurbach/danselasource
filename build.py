@@ -434,24 +434,6 @@ def page_attractions(lang):
        "credits": credits_block([a[0] for a in C.ATTRACTIONS], lang)} + footer(lang)
 
 
-def page_redirect(src, dst):
-    return """<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=%(dst)s">
-<link rel="canonical" href="%(domain)s%(dst)s">
-<meta name="robots" content="noindex">
-<title>Danse la Source</title>
-</head>
-<body>
-<p>Cette page a déménagé. <a href="%(dst)s">Continuer &rarr;</a></p>
-<script>location.replace("%(dst)s");</script>
-</body>
-</html>
-""" % {"dst": dst, "domain": SITE["domain"]}
-
-
 def page_404():
     return head("fr", "/404", "Page introuvable",
                 "Cette page n'existe pas.") + header("fr", "/") + """
@@ -526,9 +508,6 @@ def main():
     for path, text in pages.items():
         written.append(write(path, text))
 
-    for src, dst in C.REDIRECTS.items():
-        written.append(write(src, page_redirect(src, dst)))
-
     with open(os.path.join(OUT, "404.html"), "w", encoding="utf-8") as fh:
         fh.write(page_404())
 
@@ -543,11 +522,6 @@ def main():
     with open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8") as fh:
         fh.write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE["domain"])
 
-    # Cloudflare Pages / Netlify honour these; harmless elsewhere.
-    with open(os.path.join(OUT, "_redirects"), "w", encoding="utf-8") as fh:
-        for src, dst in C.REDIRECTS.items():
-            fh.write("%s %s 301\n" % (src, dst))
-
     # GitHub Pages reads the custom domain from this file; ignored elsewhere.
     with open(os.path.join(OUT, "CNAME"), "w", encoding="utf-8") as fh:
         fh.write(SITE["domain"].split("://")[1] + "\n")
@@ -558,8 +532,7 @@ def main():
         os.path.getsize(os.path.join(dp, f))
         for dp, _, fs in os.walk(OUT) for f in fs
     )
-    print("Built %d pages + %d redirects into dist/ (%.1f MB)" % (
-        len(pages), len(C.REDIRECTS), total / 1e6))
+    print("Built %d pages into dist/ (%.1f MB)" % (len(pages), total / 1e6))
     for w in sorted(written):
         print("  " + os.path.relpath(w, ROOT))
 

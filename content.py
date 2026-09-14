@@ -417,12 +417,3 @@ ALTERNATES = {
     "/fr/loisirs": "/en/nearby-attractions",
     "/en/nearby-attractions": "/fr/loisirs",
 }
-
-# Old Squarespace URLs kept alive as redirects, so existing links, bookmarks and
-# search results do not break. Each of these was a real page on the old site.
-REDIRECTS = {
-    "/home": "/",                                    # the old language-picker splash
-    "/fr/bienvenue": "/",
-    "/en/welcome": "/en/",
-    "/nearby-attractions": "/en/nearby-attractions",  # moved under /en/
-}

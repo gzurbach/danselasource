@@ -27,8 +27,7 @@ the relevant gallery list in `content.py`.
 
 ## Pages
 
-The URLs match the previous site so existing links and search results keep
-working.
+Each language lives in its own folder, French at the root.
 
 | URL | |
 |---|---|
@@ -39,9 +38,9 @@ working.
 | `/en/cottage` | The cottage |
 | `/en/nearby-attractions` | Nearby attractions |
 
-The old site's URLs still work, as redirects: `/home` and `/fr/bienvenue` to the
-French home, `/en/welcome` to the English one, and `/nearby-attractions` to its
-new place under `/en/`.
+Nothing else is served. The old Squarespace URLs are gone rather than
+redirected, so anything still pointing at them lands on `404.html`, which
+offers both home pages in both languages.
 
 ## Deployment
 
