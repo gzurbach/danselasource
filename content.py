@@ -380,7 +380,7 @@ ATTRACTIONS = [
 
 NAV = {
     "fr": [("/", "Bienvenue"), ("/fr/le-gite", "Le gîte"), ("/fr/loisirs", "Loisirs")],
-    "en": [("/en/", "Welcome"), ("/en/cottage", "The cottage"), ("/nearby-attractions", "Nearby")],
+    "en": [("/en/", "Welcome"), ("/en/cottage", "The cottage"), ("/en/nearby-attractions", "Nearby")],
 }
 
 UI = {
@@ -414,15 +414,15 @@ ALTERNATES = {
     "/en/": "/",
     "/fr/le-gite": "/en/cottage",
     "/en/cottage": "/fr/le-gite",
-    "/fr/loisirs": "/nearby-attractions",
-    "/nearby-attractions": "/fr/loisirs",
+    "/fr/loisirs": "/en/nearby-attractions",
+    "/en/nearby-attractions": "/fr/loisirs",
 }
 
-# Old Squarespace URLs kept alive as redirects, so existing links and search
-# results do not break.
+# Old Squarespace URLs kept alive as redirects, so existing links, bookmarks and
+# search results do not break. Each of these was a real page on the old site.
 REDIRECTS = {
-    "/home": "/",
+    "/home": "/",                                    # the old language-picker splash
     "/fr/bienvenue": "/",
     "/en/welcome": "/en/",
-    "/en/bed-and-breakfast": "/en/cottage#studio",
+    "/nearby-attractions": "/en/nearby-attractions",  # moved under /en/
 }

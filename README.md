@@ -37,10 +37,11 @@ working.
 | `/fr/loisirs` | Nearby attractions |
 | `/en/` | English home |
 | `/en/cottage` | The cottage |
-| `/nearby-attractions` | Nearby attractions |
+| `/en/nearby-attractions` | Nearby attractions |
 
-`/home`, `/fr/bienvenue`, `/en/welcome` and `/en/bed-and-breakfast` redirect to
-the pages above.
+The old site's URLs still work, as redirects: `/home` and `/fr/bienvenue` to the
+French home, `/en/welcome` to the English one, and `/nearby-attractions` to its
+new place under `/en/`.
 
 ## Deployment
 

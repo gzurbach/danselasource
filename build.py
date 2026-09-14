@@ -401,7 +401,7 @@ def credits_block(names, lang):
 
 def page_attractions(lang):
     d = C.ATTRACTIONS_INTRO[lang]
-    path = "/fr/loisirs" if lang == "fr" else "/nearby-attractions"
+    path = "/fr/loisirs" if lang == "fr" else "/en/nearby-attractions"
     cards = []
     for name, when, fr, en in C.ATTRACTIONS:
         label, url, text = fr if lang == "fr" else en
@@ -517,7 +517,7 @@ def main():
         "/fr/le-gite": page_cottage("fr"),
         "/en/cottage": page_cottage("en"),
         "/fr/loisirs": page_attractions("fr"),
-        "/nearby-attractions": page_attractions("en"),
+        "/en/nearby-attractions": page_attractions("en"),
     }
     # Structured data, on the French home page only.
     pages["/"] = pages["/"].replace("</head>", jsonld() + "\n</head>")
