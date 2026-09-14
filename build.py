@@ -123,8 +123,7 @@ def header(lang, path):
     return """<header class="site-head">
 <div class="wrap head-in">
 <a class="brand" href="%(home)s">
-<img src="/assets/favicon-32.png" alt="" width="26" height="26">
-<span><b>Danse la Source</b><span class="sub">Trézelles · Allier</span></span>
+<img src="/assets/logo-signature.png" alt="Danse la Source, gîte en Allier" width="440" height="120">
 </a>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">%(menu)s</button>
 <nav class="nav" id="nav" aria-label="%(menu)s">%(items)s</nav>
@@ -147,6 +146,7 @@ def footer(lang):
     booking = C.BOOKING_FR if lang == "fr" else C.BOOKING_EN
     return """<footer class="site-foot">
 <div class="wrap">
+<img class="foot-crest" src="/assets/logo-crest.png" alt="" width="324" height="420" loading="lazy" decoding="async">
 <div class="foot-grid">
 <div>
 <h3>%(contact)s</h3>

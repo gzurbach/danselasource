@@ -1,13 +1,15 @@
 :root {
-  --ink: #2a2724;
-  --ink-soft: #5d574f;
-  --paper: #faf7f1;
-  --card: #fffdfa;
-  --line: #e4ddd0;
-  --green: #3f6b4d;
-  --green-dark: #2f5139;
-  --clay: #b0552f;
-  --gold: #c89a3c;
+  /* Official brand palette, from the logo pack (DLS_Palette). */
+  --ink: #2f2a26;
+  --ink-soft: #6b5f57;
+  --paper: #f4eae6;       /* brand off-white */
+  --card: #fdf9f7;
+  --line: #e6d8d2;
+  --green: #4f5f20;       /* brand dark olive */
+  --green-dark: #3c4818;
+  --olive: #828e1b;       /* brand olive */
+  --clay: #d66e12;        /* brand orange: 2.9:1 on --paper, so decorative use only */
+  --berry: #971f40;       /* brand burgundy */
   --shadow: 0 1px 2px rgba(42, 39, 36, .05), 0 8px 24px -12px rgba(42, 39, 36, .18);
   --wrap: 68rem;
   --r: 14px;
@@ -38,7 +40,7 @@ body {
    every aspect-ratio below, forcing each thumbnail to a literal 450px. */
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--green-dark); text-underline-offset: .18em; text-decoration-thickness: from-font; }
-a:hover { color: var(--clay); }
+a:hover { color: var(--berry); }
 
 h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; letter-spacing: -.01em; margin: 0; }
 h1 { font-size: clamp(2.1rem, 5.5vw, 3.4rem); }
@@ -55,7 +57,7 @@ sup { font-size: .62em; }
 .skip:focus { left: 0; color: #fff; }
 
 :where(a, button, summary, [tabindex]):focus-visible {
-  outline: 2.5px solid var(--clay); outline-offset: 3px; border-radius: 4px;
+  outline: 2.5px solid var(--berry); outline-offset: 3px; border-radius: 4px;
 }
 
 /* ---------- header ---------- */
@@ -68,18 +70,14 @@ sup { font-size: .62em; }
 }
 .head-in { display: flex; align-items: center; gap: 1rem; min-height: 4.25rem; }
 
-.brand { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; color: inherit; margin-right: auto; min-width: 0; }
-.brand img { width: 26px; height: 26px; flex: none; }
-.brand b { font-family: var(--serif); font-size: 1.18rem; font-weight: 600; letter-spacing: .005em; white-space: nowrap; }
-.brand span { display: block; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); font-weight: 500; }
+.brand { display: inline-flex; align-items: center; text-decoration: none; margin-right: auto; min-width: 0; }
+.brand img { height: 2.8rem; width: auto; flex: none; }
 
-/* The header has to fit a wordmark, a menu button and a language switch on a
-   narrow phone, so the decorative parts step aside first. */
+/* The header has to fit the logo, a menu button and a language switch on a
+   narrow phone, so the language label shortens to a code. */
 .lang-short { display: none; }
 @media (max-width: 29.99rem) {
-  .brand img { width: 22px; height: 22px; }
-  .brand b { font-size: .98rem; }
-  .brand .sub { display: none; }
+  .brand img { height: 2.1rem; }
   .lang-full { display: none; }
   .lang-short { display: inline; }
   .head-in { gap: .5rem; }
@@ -157,7 +155,7 @@ sup { font-size: .62em; }
 
 .eyebrow {
   font-size: .74rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 600;
-  color: var(--gold); margin: 0 0 .7rem;
+  color: var(--berry); margin: 0 0 .7rem;
 }
 .hero .eyebrow { color: rgba(255,255,255,.8); }
 
@@ -200,7 +198,7 @@ sup { font-size: .62em; }
 .specs > li:last-child { border-bottom: 0; }
 .specs > li::before {
   content: ""; position: absolute; left: .35rem; top: 1.22em;
-  width: 7px; height: 7px; border-radius: 50%; background: var(--gold);
+  width: 7px; height: 7px; border-radius: 50%; background: var(--olive);
 }
 .specs ul { list-style: none; margin: .5rem 0 .2rem; padding: 0; }
 .specs ul li {
@@ -364,4 +362,14 @@ sup { font-size: .62em; }
   gap: .7rem;
   justify-content: center;
   margin-top: 2.2rem;
+}
+
+/* ---------- footer crest ---------- */
+
+.foot-crest {
+  display: block;
+  width: min(150px, 42vw);
+  height: auto;
+  margin: 0 auto;
+  padding-top: 3rem;
 }
