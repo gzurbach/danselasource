@@ -69,10 +69,10 @@ HOME = {
         "lede": "Tout au long de l'année, Mireille et Etienne vous accueillent dans une ancienne "
                 "ferme bourbonnaise du 18<sup>e</sup> siècle, aménagée en gîte de 14 places.",
         "body": [
-            "Décorée avec soin, confortable et accueillante, la demeure se situe à Floret sur la "
-            "commune de Trézelles (au bord de la départementale 480, entre Lapalisse et "
-            "Jaligny-sur-Besbre) dans l'Allier (Auvergne).",
-            "Le gîte se loue en entier, Studio compris : 14 personnes réparties sur 6 chambres.",
+            "Décorée avec soin, confortable et accueillante, la demeure se situe dans le hameau "
+            "de Floret, sur la commune de Trézelles (au bord de la départementale 480, entre "
+            "Lapalisse et Jaligny-sur-Besbre) dans l'Allier (Auvergne).",
+            "Le gîte accueille 14 personnes, réparties sur 6 chambres.",
         ],
         "cta": "Découvrir le gîte",
         "cta_href": "/fr/le-gite",
@@ -97,10 +97,10 @@ HOME = {
         "lede": "Throughout the year, Mireille and Etienne welcome you to an old 18<sup>th</sup>-century "
                 "Bourbonnais farmhouse, converted into a cottage sleeping 14.",
         "body": [
-            "Decorated with care, comfortable and welcoming, the house stands at Floret in the "
-            "village of Trézelles (on the D480 road, between Lapalisse and Jaligny-sur-Besbre) "
-            "in the Allier, Auvergne.",
-            "The cottage is let as a whole, the Studio included: 14 people across 6 bedrooms.",
+            "Decorated with care, comfortable and welcoming, the house stands in the hamlet of "
+            "Floret, in the commune of Trézelles (on the D480 road, between Lapalisse and "
+            "Jaligny-sur-Besbre) in the Allier, Auvergne.",
+            "The cottage sleeps 14, across 6 bedrooms.",
         ],
         "cta": "Discover the cottage",
         "cta_href": "/en/cottage",
@@ -129,7 +129,7 @@ COTTAGE = {
         "lede": "Situé au cœur de l'Allier, anciennement nommé pays du Bourbonnais, le gîte de "
                 "Danse la Source (3 épis) vous accueille tout au long de l'année. Ancien centre "
                 "de stage pour jeunes danseurs, le gîte possède une superficie de près de 170 m² "
-                "et se loue en entier, pour 14 personnes.",
+                "et accueille 14 personnes.",
         "spec_title": "La maison",
         "specs": [
             ("14 places réparties sur 6 chambres", [
@@ -183,8 +183,7 @@ COTTAGE = {
         "h1": "The cottage",
         "lede": "In the heart of the Allier — historically the Bourbonnais country — the Danse la "
                 "Source cottage (rated 3 épis) welcomes you all year round. A former training "
-                "centre for young dancers, the house offers nearly 170 m² and is let as a whole, "
-                "for 14 people.",
+                "centre for young dancers, the house offers nearly 170 m² and sleeps 14.",
         "spec_title": "The house",
         "specs": [
             ("Sleeps 14 across 6 bedrooms", [
