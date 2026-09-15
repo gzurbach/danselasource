@@ -175,7 +175,8 @@ COTTAGE = {
         "garden_title": "Le jardin",
         "garden": "Derrière la maison se trouve un grand jardin entouré d'arbres, fermé par une "
                   "clôture de pré (attention aux chiens fugueurs). Vous y trouverez des "
-                  "balançoires, un terrain de pétanque, un barbecue, des tables et chaises de "
+                  "balançoires, un terrain de pétanque, un barbecue et une plancha, des tables et "
+                  "chaises de "
                   "jardin, une table de ping-pong, un babyfoot, un filet de volley, un jeu d'eau "
                   "et des éclairages d'été. Un cadre idéal en famille ou entre amis.",
         "gallery_title": "En images",
@@ -227,7 +228,8 @@ COTTAGE = {
         "garden_title": "The garden",
         "garden": "Behind the house lies a large garden ringed by trees and closed off by a "
                   "pasture fence (mind escape-artist dogs). You will find swings, a pétanque "
-                  "court, a barbecue, garden tables and chairs, a ping-pong table, table "
+                  "court, a barbecue and a plancha griddle, garden tables and chairs, a ping-pong "
+                  "table, table "
                   "football, a volleyball net, a water game and summer lighting. An ideal "
                   "setting for family or friends.",
         "gallery_title": "In pictures",
