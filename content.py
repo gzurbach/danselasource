@@ -50,7 +50,26 @@ GALLERY_HOUSE = [
     ("gite-terrasse-glycine", "La terrasse sous la glycine", "The terrace under the wisteria"),
     ("gite-jardin", "Au jardin", "In the garden"),
     ("gite-terrain-de-boules", "Le terrain de boules", "The pétanque court"),
+
+    # Added September 2026. The older outdoor photos above are due to be
+    # replaced once Marion's new set arrives.
+    ("gite-cuisine-ete", "La cuisine d'été", "The summer kitchen"),
+    ("gite-coin-ombrage", "Le coin ombragé", "The shaded corner"),
+    ("gite-escalier-fontaine", "L'escalier et la fontaine", "The steps and the fountain"),
+    ("gite-transats-verger", "Les transats sous les arbres", "Loungers under the trees"),
+    ("gite-balancoire-nid", "La balançoire nid", "The nest swing"),
+    ("gite-piscine-a-balles", "La piscine à balles", "The ball pit"),
 ]
+
+# The grid crops to 4:3; these portrait photos keep their subject low in the
+# frame, so a centred crop would cut it off. Values are CSS object-position.
+PHOTO_FOCUS = {
+    "gite-cuisine-ete":      "center 72%",
+    "gite-balancoire-nid":   "center 70%",
+    "gite-transats-verger":  "center 66%",
+    "gite-piscine-a-balles": "center 64%",
+    "gite-escalier-fontaine": "center 56%",
+}
 
 GALLERY_STUDIO = [
     ("studio-lit", "Le lit du Studio", "The Studio's bed"),
@@ -63,11 +82,11 @@ GALLERY_STUDIO = [
 HOME = {
     "fr": {
         "title": "Bienvenue",
-        "meta": "Gîte de charme dans une ferme bourbonnaise du 18e siècle, à Trézelles dans "
+        "meta": "Gîte de charme dans une maison bourbonnaise du 18e siècle, à Trézelles dans "
                 "l'Allier. 14 personnes, à 20 min du PAL et de Vichy.",
-        "h1": "Une ferme bourbonnaise du 18<sup>e</sup> siècle",
+        "h1": "Une maison bourbonnaise du 18<sup>e</sup> siècle",
         "lede": "Tout au long de l'année, Mireille et Etienne vous accueillent dans une ancienne "
-                "ferme bourbonnaise du 18<sup>e</sup> siècle, aménagée en gîte de 14 places.",
+                "maison bourbonnaise du 18<sup>e</sup> siècle, aménagée en gîte de 14 places.",
         "body": [
             "Décorée avec soin, confortable et accueillante, la demeure se situe dans le hameau "
             "de Floret, sur la commune de Trézelles (au bord de la départementale 480, entre "
@@ -91,11 +110,11 @@ HOME = {
     },
     "en": {
         "title": "Welcome",
-        "meta": "A charming 18th-century farmhouse in the Allier, France, sleeping 14. "
+        "meta": "A charming 18th-century house in the Allier, France, sleeping 14. "
                 "20 minutes from Le PAL theme park and Vichy.",
-        "h1": "An 18<sup>th</sup>-century farmhouse",
+        "h1": "An 18<sup>th</sup>-century Bourbonnais house",
         "lede": "Throughout the year, Mireille and Etienne welcome you to an old 18<sup>th</sup>-century "
-                "Bourbonnais farmhouse, converted into a cottage sleeping 14.",
+                "Bourbonnais house, converted into a cottage sleeping 14.",
         "body": [
             "Decorated with care, comfortable and welcoming, the house stands in the hamlet of "
             "Floret, in the commune of Trézelles (on the D480 road, between Lapalisse and "

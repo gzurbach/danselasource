@@ -215,7 +215,9 @@ def gallery(shots, lang, modifier=""):
             '%s<figcaption>%s</figcaption></button></figure>' % (
                 img_file(name, "full"), esc(cap),
                 img(name, size="thumb", alt=cap, loading="lazy", decoding="async",
-                    width=600, height=450),
+                    width=600, height=450,
+                    **({"style": "object-position:" + C.PHOTO_FOCUS[name]}
+                       if name in C.PHOTO_FOCUS else {})),
                 esc(cap))
         )
     return '<div class="gallery%s">%s</div>' % (
