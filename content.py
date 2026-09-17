@@ -47,7 +47,8 @@ GALLERY_HOUSE = [
     ("gite-salle-d-eau-2", "Salle d'eau", "Shower room"),
     ("gite-salle-d-eau-3", "Salle d'eau", "Shower room"),
     ("gite-coursive", "Vue de la coursive", "View from the walkway"),
-    ("gite-terrasse-glycine", "La terrasse sous la glycine", "The terrace under the wisteria"),
+    ("gite-pergola-brumatisee", "La pergola brumatisée sous les glycines",
+     "The misting pergola under the wisterias"),
     ("gite-jardin", "Au jardin", "In the garden"),
     ("gite-terrain-de-boules", "Le terrain de boules", "The pétanque court"),
 
@@ -59,6 +60,9 @@ GALLERY_HOUSE = [
     ("gite-transats-verger", "Les transats sous les arbres", "Loungers under the trees"),
     ("gite-balancoire-nid", "La balançoire nid", "The nest swing"),
     ("gite-piscine-a-balles", "La piscine à balles", "The ball pit"),
+    ("gite-jeu-d-eau", "Le jeu d'eau", "The water game"),
+    ("gite-aire-de-jeux", "L'aire de jeux", "The play area"),
+    ("gite-trampoline", "Le trampoline", "The trampoline"),
 ]
 
 # The grid crops to 4:3; these portrait photos keep their subject low in the
@@ -69,6 +73,7 @@ PHOTO_FOCUS = {
     "gite-transats-verger":  "center 66%",
     "gite-piscine-a-balles": "center 64%",
     "gite-escalier-fontaine": "center 56%",
+    "gite-jeu-d-eau":         "center 62%",
 }
 
 GALLERY_STUDIO = [
@@ -85,8 +90,9 @@ HOME = {
         "meta": "Gîte de charme dans une maison bourbonnaise du 18e siècle, à Trézelles dans "
                 "l'Allier. 14 personnes, à 20 min du PAL et de Vichy.",
         "h1": "Une maison bourbonnaise du 18<sup>e</sup> siècle",
-        "lede": "Tout au long de l'année, Mireille et Etienne vous accueillent dans une ancienne "
-                "maison bourbonnaise du 18<sup>e</sup> siècle, aménagée en gîte de 14 places.",
+        "lede": "Tout au long de l'année, Mireille et Etienne vous accueillent dans une maison "
+                "bourbonnaise du 18<sup>e</sup> siècle, entièrement rénovée pour y abriter un "
+                "gîte de 14 personnes.",
         "body": [
             "Décorée avec soin, confortable et accueillante, la demeure se situe dans le hameau "
             "de Floret, sur la commune de Trézelles (au bord de la départementale 480, entre "
@@ -113,8 +119,8 @@ HOME = {
         "meta": "A charming 18th-century house in the Allier, France, sleeping 14. "
                 "20 minutes from Le PAL theme park and Vichy.",
         "h1": "An 18<sup>th</sup>-century Bourbonnais house",
-        "lede": "Throughout the year, Mireille and Etienne welcome you to an old 18<sup>th</sup>-century "
-                "Bourbonnais house, converted into a cottage sleeping 14.",
+        "lede": "Throughout the year, Mireille and Etienne welcome you to an 18<sup>th</sup>-century "
+                "Bourbonnais house, fully renovated as a cottage for 14 people.",
         "body": [
             "Decorated with care, comfortable and welcoming, the house stands in the hamlet of "
             "Floret, in the commune of Trézelles (on the D480 road, between Lapalisse and "
@@ -145,8 +151,8 @@ COTTAGE = {
         "meta": "Le gîte de Danse la Source : 170 m², 14 places en 6 chambres, salon avec "
                 "mini-cinéma et poêle à bois, grand jardin clos.",
         "h1": "Le gîte",
-        "lede": "Situé au cœur de l'Allier, anciennement nommé pays du Bourbonnais, le gîte de "
-                "Danse la Source (3 épis) vous accueille tout au long de l'année. Ancien centre "
+        "lede": "Situé au cœur de l'Allier, appelé autrefois pays du Bourbonnais, le gîte de "
+                "Danse la Source (3 épis) vous accueille tout au long de l'année. D'abord centre "
                 "de stage pour jeunes danseurs, le gîte possède une superficie de près de 170 m² "
                 "et accueille 14 personnes.",
         "spec_title": "La maison",
@@ -160,9 +166,9 @@ COTTAGE = {
             ]),
             ("4 salles d'eau dans la maison", [
                 "au rez-de-chaussée : 1 salle d'eau avec WC",
-                "à l'étage : 1 salle d'eau avec WC et 2 salles d'eau sans WC",
+                "à l'étage : 1 salle d'eau avec WC, 2 salles d'eau sans WC "
+                "et 1 WC indépendant",
             ]),
-            ("1 WC indépendant à l'étage", []),
             ("Salle à manger — cuisine", []),
             ("Salon avec mini-cinéma, bibliothèque et poêle à bois", []),
             ("Nurserie", []),
@@ -174,11 +180,12 @@ COTTAGE = {
                     "Lave-vaisselle", "Réfrigérateur", "Micro-ondes", "Double-vitrage"],
         "garden_title": "Le jardin",
         "garden": "Derrière la maison se trouve un grand jardin entouré d'arbres, fermé par une "
-                  "clôture de pré (attention aux chiens fugueurs). Vous y trouverez des "
+                  "clôture de pré (attention aux chiens fugueurs). Vous y trouverez, pour l'été, "
+                  "un beau jeu d'eau et une pergola brumatisée sous les glycines, puis des "
                   "balançoires, un terrain de pétanque, un barbecue et une plancha, des tables et "
-                  "chaises de "
-                  "jardin, une table de ping-pong, un babyfoot, un filet de volley, un jeu d'eau "
-                  "et des éclairages d'été. Un cadre idéal en famille ou entre amis.",
+                  "chaises de jardin, une table de ping-pong, un babyfoot, un filet de volley, "
+                  "des éclairages d'été et trois ponts suspendus. Un cadre idéal en famille ou "
+                  "entre amis.",
         "gallery_title": "En images",
         "studio_h": "Le Studio",
         "studio_body": "La sixième chambre se trouve en rez-de-chaussée : le Studio, aménagé dans "
@@ -201,9 +208,9 @@ COTTAGE = {
         "meta": "The Danse la Source cottage: 170 m², sleeps 14 in 6 bedrooms, living room with "
                 "mini-cinema and wood stove, large enclosed garden.",
         "h1": "The cottage",
-        "lede": "In the heart of the Allier — historically the Bourbonnais country — the Danse la "
-                "Source cottage (rated 3 épis) welcomes you all year round. A former training "
-                "centre for young dancers, the house offers nearly 170 m² and sleeps 14.",
+        "lede": "In the heart of the Allier — once known as the Bourbonnais country — the Danse "
+                "la Source cottage (rated 3 épis) welcomes you all year round. Originally a "
+                "training centre for young dancers, the house offers nearly 170 m² and sleeps 14.",
         "spec_title": "The house",
         "specs": [
             ("Sleeps 14 across 6 bedrooms", [
@@ -215,9 +222,9 @@ COTTAGE = {
             ]),
             ("4 shower rooms in the house", [
                 "ground floor: 1 shower room with WC",
-                "upstairs: 1 shower room with WC and 2 shower rooms without",
+                "upstairs: 1 shower room with WC, 2 shower rooms without "
+                "and 1 separate WC",
             ]),
-            ("1 separate WC upstairs", []),
             ("Dining room — kitchen", []),
             ("Living room with mini-cinema, library and wood-burning stove", []),
             ("Nursery", []),
@@ -227,11 +234,11 @@ COTTAGE = {
                     "Dishwasher", "Fridge", "Microwave", "Double glazing"],
         "garden_title": "The garden",
         "garden": "Behind the house lies a large garden ringed by trees and closed off by a "
-                  "pasture fence (mind escape-artist dogs). You will find swings, a pétanque "
+                  "pasture fence (mind escape-artist dogs). For summer you will find a lovely "
+                  "water game and a misting pergola under the wisterias, then swings, a pétanque "
                   "court, a barbecue and a plancha griddle, garden tables and chairs, a ping-pong "
-                  "table, table "
-                  "football, a volleyball net, a water game and summer lighting. An ideal "
-                  "setting for family or friends.",
+                  "table, table football, a volleyball net, summer lighting and three suspension "
+                  "bridges. An ideal setting for family or friends.",
         "gallery_title": "In pictures",
         "studio_h": "The Studio",
         "studio_body": "The sixth bedroom is on the ground floor: the Studio, converted from a "
