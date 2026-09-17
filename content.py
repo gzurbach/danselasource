@@ -184,8 +184,7 @@ COTTAGE = {
                   "un beau jeu d'eau et une pergola brumatisée sous les glycines, puis des "
                   "balançoires, un terrain de pétanque, un barbecue et une plancha, des tables et "
                   "chaises de jardin, une table de ping-pong, un babyfoot, un filet de volley, "
-                  "des éclairages d'été, trois ponts suspendus… Un cadre idéal en famille ou "
-                  "entre amis.",
+                  "des éclairages d'été… Un cadre idéal en famille ou entre amis.",
         "gallery_title": "En images",
         "studio_h": "Le Studio",
         "studio_body": "La sixième chambre se trouve en rez-de-chaussée : le Studio, aménagé dans "
@@ -237,8 +236,8 @@ COTTAGE = {
                   "pasture fence (mind escape-artist dogs). For summer you will find a lovely "
                   "water game and a misting pergola under the wisterias, then swings, a pétanque "
                   "court, a barbecue and a plancha griddle, garden tables and chairs, a ping-pong "
-                  "table, table football, a volleyball net, summer lighting, three suspension "
-                  "bridges… An ideal setting for family or friends.",
+                  "table, table football, a volleyball net, summer lighting… An ideal setting "
+                  "for family or friends.",
         "gallery_title": "In pictures",
         "studio_h": "The Studio",
         "studio_body": "The sixth bedroom is on the ground floor: the Studio, converted from a "
